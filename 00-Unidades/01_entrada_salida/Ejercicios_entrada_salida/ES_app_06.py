@@ -38,9 +38,17 @@ class App(customtkinter.CTk):
         self.btn_sumar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
 
+ #"el resultado de la suma es:755"
     def btn_sumar_on_click(self):
-        pass
-     
+        numero_uno = self.txt_operador_a.get()
+        numero_dos = self.txt_operador_b.get()
+        
+        numero_uno_a_numero = int(numero_uno)
+        numero_dos_a_numero = int(numero_dos)
+        
+        resultado = numero_uno_a_numero + numero_dos_a_numero
+
+        alert("el resultado de la suma es", resultado)
         
 if __name__ == "__main__":
     app = App()

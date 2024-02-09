@@ -45,7 +45,7 @@ class App(customtkinter.CTk):
         edad = self.txt_edad.get()
 
         #usted se llama nombre y su edad es edad años
-        alert("Titulo", "usted se llama " +nombre+" y su edad es "+edad+" años" )
+        alert("Titulo", f"usted se llama {nombre} y su edad {edad} es años" )
         
 
 
