@@ -27,7 +27,13 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        
+        #descripcion_tarea = "tareaE/S02"
+
+        descripcion_tarea = prompt ("datos", "ingrese descripcion de la tarea :D")
+
+
+        alert("Descripcion", descripcion_tarea)
         
         
     
